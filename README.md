@@ -3,9 +3,7 @@ A simple hybrid branch predictor implementation for ChampSim that combines gshar
 
 Designed as a project for the subject "Ampliación de Estructura de Computadores" 2024-2025. Facultad de Informática de la Universidad de Murcia.
 
-A hybrid predictor will be implemented, combining gshare (global history) with a local branch predictor (LBP), where the history of each branch is considered independently.
-
-The local branch predictor has been used in various generations of commercial processors, such as Intel's Pentium MMX, Pentium II, and Pentium III, which employed 4-bit histories and tables with 16 entries per branch.
+The implemented hybrid predictor, combines gshare (global history) with a local branch predictor (LBP), where the history of each branch is considered independently.
 
 In this implementation, we use 1024 entries for both the global prediction table and the local prediction table. A combination of both predictors (LBP and gshare) along with a meta-predictor will be used to decide which predictor is correct for each branch. The meta-predictor will implement a 2-bit counter for each position in an array of size 1024.
 
